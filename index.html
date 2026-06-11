@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroForte Vida | Sustentabilidade e Produtividade</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="container navbar">
+            <div class="logo">
+                <i class="fa-solid fa-leaf"></i> AgroForte<span>Vida</span>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="#pilares">Pilares</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>A força do campo cultivando o futuro</h1>
+            <p>Unindo tecnologia avançada, sustentabilidade e a paixão pela terra para gerar a vida.</p>
+            <a href="#sobre" class="btn-principal">Conheça Nossa Missão</a>
+        </div>
+    </section>
+
+    <section id="sobre" class="sobre container">
+        <div class="sobre-img">
+            <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=600&q=80" alt="Campo Verde AgroForte">
+        </div>
+        <div class="sobre-texto">
+            <h2>Quem Somos</h2>
+            <p>O <strong>AgroForte Vida</strong> nasceu do propósito de fortalecer a produção agrícola nacional respeitando os limites da natureza. Entendemos que a verdadeira força do agro está no equilíbrio entre alta produtividade e preservação ambiental.</p>
+            <p>Apoiamos produtores com soluções inovadoras para que cada semente plantada se transforme em vida, alimento e prosperidade para o planeta.</p>
+        </div>
+    </section>
+
+    <section id="pilares" class="pilares-section">
+        <div class="container">
+            <h2 class="titulo-centralizado">Nossos Três Pilares</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <i class="fa-solid fa-seedling icon-agro"></i>
+                    <h3>Tecnologia Verde</h3>
+                    <p>Otimização de lavouras através de ferramentas inteligentes de monitoramento e manejo biológico.</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-hand-holding-droplet icon-agro"></i>
+                    <h3>Sustentabilidade</h3>
+                    <p>Uso consciente dos recursos hídricos e práticas que mantêm o solo rico e saudável por gerações.</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-wheat-awn icon-agro"></i>
+                    <h3>Produtividade</h3>
+                    <p>Garantia de safras fortes, seguras e nutritivas para alimentar o mercado global.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="contato container">
+        <h2>Fale Conosco</h2>
+        <p>Quer saber mais sobre nossas soluções ou fazer uma parceria? Deixe sua mensagem!</p>
+        
+        <form id="form-contato">
+            <div class="form-group">
+                <input type="text" id="nome" placeholder="Seu Nome" required>
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" placeholder="Seu E-mail" required>
+            </div>
+            <div class="form-group">
+                <textarea id="mensagem" rows="5" placeholder="Como podemos ajudar o seu negócio?" required></textarea>
+            </div>
+            <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+        </form>
+        <div id="feedback-form" class="mensagem-sucesso hidden">Obrigado! Sua mensagem foi enviada com sucesso.</div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 AgroForte Vida. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

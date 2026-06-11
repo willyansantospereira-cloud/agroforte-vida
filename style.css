@@ -1,0 +1,284 @@
+/* Configurações Gerais e Cores */
+:root {
+    --verde-escuro: #1b4332;
+    --verde-principal: #2d6a4f;
+    --verde-claro: #52b788;
+    --tom-terra: #b76935;
+    --fundo-leve: #f8f9fa;
+    --texto-escuro: #212529;
+    --texto-claro: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    color: var(--texto-escuro);
+    background-color: #ffffff;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Header & Menu */
+header {
+    background-color: var(--verde-escuro);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.logo {
+    color: var(--texto-claro);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo i {
+    color: var(--verde-claro);
+    margin-right: 8px;
+}
+
+.logo span {
+    color: var(--verde-claro);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: var(--texto-claro);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--verde-claro);
+}
+
+.menu-toggle {
+    display: none;
+    color: var(--texto-claro);
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Banner Hero */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--texto-claro);
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-principal {
+    display: inline-block;
+    background-color: var(--tom-terra);
+    color: var(--texto-claro);
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn-principal:hover {
+    background-color: #965328;
+}
+
+/* Seção Sobre */
+.sobre {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.sobre-img img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.sobre-texto h2 {
+    color: var(--verde-escuro);
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.sobre-texto p {
+    margin-bottom: 15px;
+    font-size: 17px;
+}
+
+/* Seção Pilares */
+.pilares-section {
+    background-color: var(--fundo-leve);
+    padding: 60px 0;
+}
+
+.titulo-centralizado {
+    text-align: center;
+    color: var(--verde-escuro);
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+    border-top: 4px solid var(--verde-principal);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.icon-agro {
+    font-size: 40px;
+    color: var(--verde-principal);
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    color: var(--verde-escuro);
+}
+
+/* Seção Contato */
+.contato {
+    text-align: center;
+    max-width: 600px !important;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.contato h2 {
+    color: var(--verde-escuro);
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+#form-contato {
+    margin-top: 30px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn-enviar {
+    background-color: var(--verde-principal);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s;
+}
+
+.btn-enviar:hover {
+    background-color: var(--verde-escuro);
+}
+
+.mensagem-sucesso {
+    margin-top: 15px;
+    padding: 12px;
+    background-color: #d4edda;
+    color: #155724;
+    border-radius: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--verde-escuro);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+/* Responsividade Básica (Celulares) */
+@media(max-width: 768px) {
+    .nav-links {
+        display: none; /* Em sistemas mais complexos pode ser adicionado o menu dinâmico */
+    }
+    .menu-toggle {
+        display: block;
+    }
+    .sobre {
+        grid-template-columns: 1fr;
+    }
+    .hero-content h1 {
+        font-size: 32px;
+    }
+}
